@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment</title>
+</head>
+<body>
+    <h1>Forms</h1>
+
+    <!-- Task 1 -->
+    <h2>Email Input Form</h2>
+    <form action="/submit-email" method="post">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Task 2 -->
+    <h2>Number Input Form</h2>
+    <form action="/submit-quantity" method="post">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" placeholder="Enter quantity" min="1" max="10" step="1" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Task 3 -->
+    <h2>Date Input Form</h2>
+    <form action="/submit-date" method="post">
+        <label for="date">Select a date:</label>
+        <input type="date" id="date" name="date" placeholder="Select date" min="2023-01-01" max="2023-12-31" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Task 4 -->
+    <h2>Range Input Form</h2>
+    <form action="/submit-range" method="post">
+        <label for="range">Select a value (1-10):</label>
+        <input type="range" id="range" name="range" min="1" max="10" value="5" step="1">
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Task 5 -->
+    <h2>Color Input Form</h2>
+    <form action="/submit-color" method="post">
+        <label for="color">Choose a color:</label>
+        <input type="color" id="color" name="color" value="#ff0000">
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming</title>
+</head>
+<body>
+    <h1>Programming</h1>
+
+    <h2>Selections</h2>
+    <form action="/submit-preferences" method="post">
+        <label for="language">Favorite Programming Language:</label>
+        <select id="language" name="language" required aria-label="Select your favorite programming language">
+            <option value="">Select language...</option>
+            <option value="python">Python</option>
+            <option value="javascript">JavaScript</option>
+            <option value="java">Java</option>
+            <option value="csharp">C#</option>
+            <option value="php">PHP</option>
+        </select>
+
+        <br><br>
+
+        <fieldset>
+            <legend>Expertise Level:</legend>
+            <label><input type="radio" name="expertise" value="beginner" required aria-label="Beginner"> Beginner</label>
+            <label><input type="radio" name="expertise" value="intermediate" aria-label="Intermediate"> Intermediate</label>
+            <label><input type="radio" name="expertise" value="advanced" aria-label="Advanced"> Advanced</label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Development Platforms:</legend>
+            <label><input type="checkbox" name="platform" value="web" aria-label="Web platform"> Web</label>
+            <label><input type="checkbox" name="platform" value="mobile" aria-label="Mobile platform"> Mobile</label>
+            <label><input type="checkbox" name="platform" value="desktop" aria-label="Desktop platform"> Desktop</label>
+        </fieldset>
+
+        <br>
+
+        <button type="submit">Submit Preferences</button>
+    </form>
+
+</body>
+</html>
